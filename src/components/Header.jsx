@@ -1,12 +1,12 @@
-import '../styles/Banner.css'
+// import '../styles/Header.css'
 import logo from '../assets/logo.png'
 import Nav from './nav'
 
 
-function Banner() {
+function Header() {
     return (
-      <div className="Banner">
-        <header className="Banner-header">
+      <div className="Header">
+        <header className="Header-header">
   
           <h1>
             Début du projet Kasa
@@ -18,4 +18,4 @@ function Banner() {
       </div>
     );
   }
-  export default Banner;
+  export default Header;

@@ -7,6 +7,7 @@ import About from './pages/About/';
 import Error404 from './pages/Error404';
 import './index.css';
 import App from './App';
+import Header from './components/Header'
 import reportWebVitals from './reportWebVitals';
 
 
@@ -14,6 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
             <Router>
+            <Header/>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
