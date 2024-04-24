@@ -1,21 +1,18 @@
-// import '../styles/Header.css'
-import logo from '../assets/logo.png'
-import Nav from './nav'
+import '../styles/main.css'
+import logoMobile from '../assets/logo-mobile.png'
+import Nav from './Nav'
 
 
 function Header() {
     return (
-      <div className="Header">
-        <header className="Header-header">
+      
+        <header className="header-container">
   
-          <h1>
-            Début du projet Kasa
-          </h1>
-          <img src={logo} alt="logo du site" className='logo-site'></img>
-  
+          <img className="header-container-logo" src={logoMobile} alt="logo du site"></img>
+          <Nav/>
         </header>
-        <Nav/>
-      </div>
+        
+      
     );
   }
   export default Header;

@@ -1,6 +1,3 @@
-
-
-
 function Renting() {
     return (
         <div>
