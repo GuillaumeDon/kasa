@@ -1,7 +1,7 @@
 
 import './App.css';
-import './components/Banner'
-import Banner from './components/Banner';
+import Home from './pages/Home/index';
+
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       
       <header className="App-header">
-      <Banner/>
+      <Home/>
       </header>
     </div>
   );

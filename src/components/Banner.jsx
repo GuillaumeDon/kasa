@@ -1,5 +1,7 @@
 import '../styles/Banner.css'
 import logo from '../assets/logo.png'
+import Nav from './nav'
+
 
 function Banner() {
     return (
@@ -12,6 +14,7 @@ function Banner() {
           <img src={logo} alt="logo du site" className='logo-site'></img>
   
         </header>
+        <Nav/>
       </div>
     );
   }
