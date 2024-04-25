@@ -2,6 +2,7 @@
 
     // width: 335px;
     margin: auto;
+    width: 95%;
    
 
     &-presentation{
@@ -31,3 +32,15 @@
     }
 }
 
+@media screen and (min-width: 751px) {
+
+    .home-container{
+        &-presentation{
+            align-items: center;
+            justify-content: center;
+
+            &-title{
+                text-align: center;
+            }
+        }
+    }}

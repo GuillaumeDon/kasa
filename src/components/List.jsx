@@ -5,14 +5,14 @@ function List () {
   return (
    
       
-      <ul className='container-list'>
+      <section className='container-list'>
         {jsonData.map(item => (
-          <li className='container-list-item' key={item.id}>
+          <article className='container-list-item' key={item.id}>
             <h3 className='container-list-item-title'>{item.title}</h3>
             <img className='container-list-item-img' src={item.cover} alt={item.title}  />
-          </li>
+          </article>
         ))}
-      </ul>
+      </section>
     
   );
 };

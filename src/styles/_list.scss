@@ -7,7 +7,6 @@
     margin: auto;
  
 
-
     &-item{
         background-color: $primaryColor;
         list-style-type: none;
@@ -17,9 +16,10 @@
         color: rgb(255, 255, 255);
         text-shadow: 1px 1px 2px black;
         // width: 335px;
-        height: 200px;
+        height: 220px;
        
         margin-bottom: 50px;
+
      
     
 
@@ -41,4 +41,17 @@
             
         }
     }
+}
+
+@media screen and (min-width: 751px) {
+    .container-list {
+       flex-direction: row; 
+       flex-wrap: wrap;           /* Autres styles pour les écrans de plus de 750px */
+    }
+
+    .container-list-item {
+        flex: calc(100% / 3);
+
+    }
+
 }
