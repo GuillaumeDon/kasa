@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import jsonData from '../data/data.json'
 
 function List () {
@@ -7,10 +9,10 @@ function List () {
       
       <section className='container-list'>
         {jsonData.map(item => (
-          <article className='container-list-item' key={item.id}>
-            <h3 className='container-list-item-title'>{item.title}</h3>
+        <Link to={`/product/${item.id}`} key={item.id} className='container-list-item'>
+        <h3 className='container-list-item-title'>{item.title}</h3>
             <img className='container-list-item-img' src={item.cover} alt={item.title}  />
-          </article>
+          </Link>
         ))}
       </section>
     
