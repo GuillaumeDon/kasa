@@ -1,9 +1,11 @@
 
 function Home(){
     return(
-        <div>
-
-        <h1>Ceci est la page Home</h1>
+        <div className="home-container">
+            <div className="home-container-presentation">
+            <h1 className="home-container-presentation-title">Chez vous,<br></br> partout et ailleurs</h1>
+            </div>
+        
         </div>
     )
 }
