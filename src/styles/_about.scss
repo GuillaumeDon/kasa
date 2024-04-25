@@ -1,0 +1,15 @@
+.collapse-container{
+    background-color: $primaryColor;
+    color: white;
+    margin-bottom: 30px;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+      }
+
+}
+
+
