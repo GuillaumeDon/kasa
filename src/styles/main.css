@@ -18,6 +18,20 @@ a {
   color: black;
 }
 
+.banner-container {
+  height: 300px;
+  width: 95%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-container-title {
+  color: white;
+}
+
 .container-list {
   display: flex;
   flex-direction: column;
@@ -87,6 +101,10 @@ a {
 }
 
 .home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   width: 95%;
 }

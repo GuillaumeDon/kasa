@@ -1,13 +1,11 @@
+import React from 'react';
 
-function Banner(){
-    return(
-
-            <div className="home-container-presentation">
-            <h1 className="home-container-presentation-title">Chez vous, partout et ailleurs</h1>
-            </div>
-
-
-    )
+function Banner({ title, imageUrl }) {
+  return (
+    <div className="banner-container" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <h1 className="banner-container-title">{title}</h1>
+    </div>
+  );
 }
 
 export default Banner;

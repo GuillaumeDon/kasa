@@ -1,0 +1,14 @@
+.banner-container{
+    height: 300px;
+    width: 95%;
+    background-repeat: no-repeat ;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &-title{
+        color:white;
+    }
+}
