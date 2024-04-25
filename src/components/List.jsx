@@ -1,19 +1,19 @@
 import React from 'react';
 import jsonData from '../data/data.json'
 
-const List = () => {
+function List () {
   return (
-    <div>
-      <h2>Liste des Logements</h2>
-      <ul>
+   
+      
+      <ul className='container-list'>
         {jsonData.map(item => (
-          <li key={item.id}>
-            <h3>{item.title}</h3>
-            <img src={item.cover} alt={item.title} style={{ width: '200px', height: 'auto' }} />
+          <li className='container-list-item' key={item.id}>
+            <h3 className='container-list-item-title'>{item.title}</h3>
+            <img className='container-list-item-img' src={item.cover} alt={item.title}  />
           </li>
         ))}
       </ul>
-    </div>
+    
   );
 };
 
