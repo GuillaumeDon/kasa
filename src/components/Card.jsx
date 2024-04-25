@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import jsonData from '../data/data.json'
 
-function List () {
+function Card () {
   return (
    
       
@@ -19,4 +19,4 @@ function List () {
   );
 };
 
-export default List;
+export default Card;
