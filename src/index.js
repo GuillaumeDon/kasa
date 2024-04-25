@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/';
-import Renting from './pages/Renting';
+// import Renting from './pages/Renting';
 import About from './pages/About/';
 import Error404 from './pages/Error404';
+import ProductDetail from './pages/ProductDetail'; // Assurez-vous d'importer ProductDetail depuis le bon emplacement
+
 import './index.css';
 import App from './App';
 import Header from './components/Header'
@@ -20,7 +22,9 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/renting" element={<Renting />} />
+        {/* <Route path="/renting" element={<Renting />} /> */}
+        <Route path="/product/:id" element={<ProductDetail />} />
+
         <Route path="*" element={<Error404 />} />
 
       </Routes>
