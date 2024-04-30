@@ -1,16 +1,15 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import jsonData from './../../data/data.json'; // Assurez-vous de remplacer 'votre-fichier-json.json' par le chemin correct vers votre fichier JSON
 
+import { useParams, Navigate } from 'react-router-dom';
+import jsonData from './../../data/data.json'; 
 function ProductDetail() {
   const { id } = useParams();
 
   // Recherchez le produit correspondant à l'ID dans le fichier JSON
   const product = jsonData.find(item => item.id === id);
 
-  // Vérifiez si le produit existe
   if (!product) {
-    return <div>Produit non trouvé</div>;
+    return <Navigate to="/404" />;
   }
 
   // Affichez les détails du produit

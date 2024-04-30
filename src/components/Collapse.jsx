@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUpIcon, ArrowDownIcon } from '../components/Arrows'; // Assure-toi que le chemin d'importation est correct
+import { ArrowUpIcon, ArrowDownIcon } from '../components/Arrows'; 
 
 
 
