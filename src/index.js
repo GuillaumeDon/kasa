@@ -20,13 +20,11 @@ root.render(
     <Router>
       <Header />
       <Routes>
+      <Route path="/product/:id" element={<ProductDetail />} />
+      <Route path="/about" element={<About />} />
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         {/* <Route path="/renting" element={<Renting />} /> */}
-        <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/404/" element={<Error404 />} />
-
-
         <Route path="*" element={<Error404 />} />
 
       </Routes>
