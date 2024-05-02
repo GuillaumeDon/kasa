@@ -6,6 +6,7 @@ import Collapse from '../../components/Collapse';
 import Tags from '../../components/Tags';
 import Rating from '../../components/Rating';
 import Host from '../../components/Host';
+import Slideshow from '../../components/Slideshow';
 
 function ProductDetail() {
   const { id } = useParams();
@@ -22,6 +23,7 @@ function ProductDetail() {
   return (
     <div>
       
+      <Slideshow images={product.pictures}/>
       <img src={product.cover} alt={product.title} />
       <h2>{product.title}</h2>
       <h3>Localisation: {product.location}</h3>
