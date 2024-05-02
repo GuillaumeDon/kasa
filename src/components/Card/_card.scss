@@ -23,7 +23,7 @@
        
         margin-bottom: 50px;
         width: 100%;
-        max-width: 758px;
+        max-width: 600px;
         height: 255px;
 
      
@@ -62,14 +62,14 @@
       
 
         max-height: 340px;
-        max-width: 340px;
-        flex: calc(50% - 33px);
+        max-width: 280px;
+        flex: calc(33% - 33px);
 
     }
     }
 }
 
-// @media screen and (min-width: $laptop) {
+// @media screen and (min-width: $laptopMax) {
 //     .container-list {
 
 

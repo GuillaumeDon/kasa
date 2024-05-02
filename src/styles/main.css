@@ -4,7 +4,6 @@
 }
 
 body {
-  margin: 0;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,6 +11,11 @@ body {
 
 a {
   color: black;
+}
+
+#root {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .arrow-left,
@@ -46,6 +50,16 @@ a {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .slideshow-container-number {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    color: white;
+    font-weight: bold;
+  }
+}
 .banner-container {
   width: 90%;
   height: 111px;
@@ -76,6 +90,29 @@ a {
     text-align: center;
   }
 }
+.tags {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+.tags-item {
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  font-size: 13px;
+  width: 400px;
+  height: 20px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.host-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .container-list {
   display: flex;
   flex-direction: column;
@@ -92,7 +129,7 @@ a {
   height: 220px;
   margin-bottom: 50px;
   width: 100%;
-  max-width: 758px;
+  max-width: 600px;
   height: 255px;
 }
 .container-list-item-title {
@@ -115,16 +152,23 @@ a {
   }
   .container-list-item {
     max-height: 340px;
-    max-width: 340px;
-    flex: calc(50% - 33px);
+    max-width: 280px;
+    flex: calc(33% - 33px);
   }
 }
 .product-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+}
+.product-container-title {
+  color: #FF6060;
+  font-size: 20px;
+}
+.product-container-location {
+  font-size: 15px;
 }
 
 .header-container {

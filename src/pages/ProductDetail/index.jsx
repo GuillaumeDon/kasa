@@ -25,8 +25,8 @@ function ProductDetail() {
       
       <Slideshow images={product.pictures}/>
       {/* <img src={product.cover} alt={product.title} /> */}
-      <h2>{product.title}</h2>
-      <h3>{product.location}</h3>
+      <h2 className='product-container-title'>{product.title}</h2>
+      <h3 className='product-container-location'>{product.location}</h3>
       <Tags productId={id}/>
       <Rating rating={product.rating} />
       <Host name={product.host.name} picture={product.host.picture} />

@@ -6,9 +6,10 @@
 }
 
 
+
 body {
   
-    margin: 0;
+    // margin: 0;
     font-family: $fontFamily;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -18,3 +19,13 @@ body {
 a{
     color: black;
 }
+
+#root{
+ 
+
+  max-width: 1000px;
+  margin: auto;
+  
+}
+
+

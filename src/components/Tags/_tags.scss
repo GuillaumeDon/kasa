@@ -1,0 +1,23 @@
+.tags{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+   
+   
+
+
+
+    &-item{
+        background-color: $primaryColor;
+        color: $textColor;
+        border-radius: 10px;
+        font-size: 13px;
+        width: 400px;
+        height: 20px;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+}

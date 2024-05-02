@@ -10,9 +10,9 @@ function Tags({ productId }) {
     }
 
     return (
-        <ul className="header-container-nav">
+        <ul className="tags">
             {product.tags.map(tag => (
-                <li key={tag}>{tag}</li>
+                <li className="tags-item" key={tag}>{tag}</li>
             ))}
         </ul>
     );

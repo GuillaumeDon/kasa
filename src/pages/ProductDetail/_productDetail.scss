@@ -2,6 +2,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    // align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+
+    &-title{
+        color: $primaryColor;
+        font-size: 20px;
+    }
+
+    &-location{
+        font-size: 15px;
+    }
+
+
 }
