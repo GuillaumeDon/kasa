@@ -1,0 +1,17 @@
+.slideshow-container{
+ display: flex;
+ width: 90%;
+ height: 240px;
+ position: relative;
+
+
+ &-img{
+   
+        width: 100%;
+    
+ }
+
+ &-number{
+    display: none;
+ }
+}

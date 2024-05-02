@@ -53,11 +53,11 @@ function Slideshow({ images }) {
   const showNumber = images.length > 1;
 
   return (
-    <div className="slideshow">
-      {showArrows && <button onClick={prevSlide}><ArrowRightIcon /></button>}
-      <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
-      {showArrows && <button onClick={nextSlide}><ArrowLeftIcon /></button>}
-      {showNumber && <div className="slide-number">{currentSlide + 1} / {images.length}</div>}
+    <div className="slideshow-container">
+      {showArrows && <div onClick={prevSlide}><ArrowRightIcon /></div>}
+      <img className="slideshow-container-img" src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+      {showArrows && <div onClick={nextSlide}><ArrowLeftIcon /></div>}
+      {showNumber && <div className="slideshow-container-number">{currentSlide + 1} / {images.length}</div>}
     </div>
   );
 }

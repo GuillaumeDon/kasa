@@ -14,6 +14,38 @@ a {
   color: black;
 }
 
+.arrow-left,
+.arrow-right {
+  display: flex;
+  position: absolute;
+  top: 40%;
+}
+
+.arrow-left {
+  right: 1%;
+}
+
+.arrow-right {
+  left: 1%;
+}
+
+.arrow-left::hover {
+  cursor: pointer;
+}
+
+.slideshow-container {
+  display: flex;
+  width: 90%;
+  height: 240px;
+  position: relative;
+}
+.slideshow-container-img {
+  width: 100%;
+}
+.slideshow-container-number {
+  display: none;
+}
+
 .banner-container {
   width: 90%;
   height: 111px;
@@ -74,7 +106,7 @@ a {
   width: 100%;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1000px) {
   .container-list {
     background-color: #F6F6F6;
     flex-direction: row;
@@ -87,6 +119,14 @@ a {
     flex: calc(50% - 33px);
   }
 }
+.product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .header-container {
   width: 95%;
   display: flex;

@@ -1,0 +1,19 @@
+.arrow-left,
+.arrow-right{
+    display: flex;
+    position: absolute;
+    top:40%;
+
+}
+
+.arrow-left{
+    right:1%; 
+}
+
+.arrow-right{
+    left:1%;
+   
+}
+.arrow-left::hover{
+    cursor: pointer;
+}

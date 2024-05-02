@@ -21,7 +21,7 @@ function ProductDetail() {
 
   // Affichez les détails du produit
   return (
-    <div>
+    <div className='product-container'>
       
       <Slideshow images={product.pictures}/>
       {/* <img src={product.cover} alt={product.title} /> */}
