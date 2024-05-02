@@ -12,3 +12,15 @@ export function ArrowDownIcon() {
     <img src={logoArrow} alt="Arrow Down" className="arrow-icon" style={{ transform: 'rotate(180deg)' }} />
   );
 }
+
+export function ArrowleftIcon() {
+  return (
+    <img src={logoArrow} alt="Arrow Down" className="arrow-icon" style={{ transform: 'rotate(90deg)' }} />
+  );
+}
+
+export function ArrowRightIcon() {
+  return (
+    <img src={logoArrow} alt="Arrow Down" className="arrow-icon" style={{ transform: 'rotate(270deg)' }} />
+  );
+}
