@@ -24,7 +24,7 @@ function ProductDetail() {
     <div>
       
       <Slideshow images={product.pictures}/>
-      <img src={product.cover} alt={product.title} />
+      {/* <img src={product.cover} alt={product.title} /> */}
       <h2>{product.title}</h2>
       <h3>Localisation: {product.location}</h3>
       <Tags productId={id}/>
