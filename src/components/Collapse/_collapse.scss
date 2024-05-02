@@ -1,8 +1,10 @@
 .collapse-container{
 
-        
+       margin-bottom: 20px;
 
         &-header{
+            display: flex;
+            justify-content: space-between;
             background-color: $primaryColor;
             color: white;
             &-title{

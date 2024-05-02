@@ -108,7 +108,12 @@ body {
   color: #FF6060;
 }
 
+.collapse-container {
+  margin-bottom: 20px;
+}
 .collapse-container-header {
+  display: flex;
+  justify-content: space-between;
   background-color: #FF6060;
   color: white;
 }
