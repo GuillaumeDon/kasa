@@ -135,6 +135,15 @@ a {
     font-size: 48px;
   }
 }
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+}
+
 .collapse-container {
   background-color: #FF6060;
   color: white;
