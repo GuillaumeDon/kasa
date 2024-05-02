@@ -3,6 +3,8 @@ import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import jsonData from './../../data/data.json'; 
 import Collapse from '../../components/Collapse';
+import Tags from '../../components/Tags';
+
 function ProductDetail() {
   const { id } = useParams();
 
@@ -20,10 +22,12 @@ function ProductDetail() {
       
       <img src={product.cover} alt={product.title} />
       <h2>{product.title}</h2>
+      <h3>Localisation: {product.location}</h3>
+      <Tags productId={id}/>
       <Collapse title="Description">
       <p>{product.description}</p>
       </Collapse>
-      <p>Localisation: {product.location}</p>
+      
       <Collapse title="Equipements">
       <ul>
         {product.equipments.map((equipment, index) => (
