@@ -6,19 +6,40 @@
     margin-top: 20px;
     padding: 20px;
 
-    &-title{
+    &-title {
         color: $primaryColor;
         font-size: 20px;
     }
 
-    &-location{
+    &-location {
         font-size: 15px;
     }
 
-    &-infos{
+    &-infos {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
+
+    }
+}
+
+
+@media screen and (min-width: $tablet) {
+
+    .product-container {
+        &-infos {
+
+            flex-direction: column-reverse;
+
+            align-items: flex-end;
+
+
+        }
+
+        &-collapse{
+            display: flex;
+            
+
+        }
     }
 }

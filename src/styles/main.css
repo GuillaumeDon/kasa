@@ -217,6 +217,15 @@ a {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .product-container-infos {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .product-container-collapse {
+    display: flex;
+  }
+}
 .header-container {
   width: 95%;
   display: flex;

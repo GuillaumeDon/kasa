@@ -32,18 +32,21 @@ function ProductDetail() {
       <Rating rating={product.rating} />
       <Host name={product.host.name} picture={product.host.picture} />
       </div>
+      <div className='product-container-collapse'>
       <Collapse title="Description">
       <p>{product.description}</p>
       </Collapse>
       
       <Collapse title="Equipements">
+
       <ul>
         {product.equipments.map((equipment, index) => (
           <li key={index}>{equipment}</li>
         ))}
       </ul>
       </Collapse>
-      {/* Vous pouvez afficher d'autres détails ici */}
+      
+    </div>
     </div>
   );
 }
