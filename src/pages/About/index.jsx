@@ -6,7 +6,7 @@ import CoverPictureAbout from '../../assets/picture-about.png'
 
 function About() {
 
-    const title = "Bienvenue sur la page A propos";
+    const title = "";
     return (
         <div className='about-container'>
             <Banner title={title} imageUrl={CoverPictureAbout}  />

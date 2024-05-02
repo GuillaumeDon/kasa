@@ -5,49 +5,7 @@
    justify-content: center;
    align-items: center;
     margin: auto;
-    width: 95%;
+    // width: 95%;
    
 
-    &-presentation{
-        height: 111px;
-        border-radius: 10px;
-        background: url(../assets/img-home-contrasted.png);
-        
-        background-size : cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        margin: 30px 0px 30px 0px;
-       
-        
-     
-    
-        
-        &-title{
-            
-            color: white;
-            font-size: 24px;
-            padding: 20px;
-            
-           
-            
-            
-        }
-    }
 }
-
-@media screen and (min-width: $tablet) {
-
-    .home-container{
-        &-presentation{
-            height: 220px;
-            align-items: center;
-            justify-content: center;
-           
-
-            &-title{
-                text-align: center;
-                font-size: 48px;
-            }
-        }
-    }}

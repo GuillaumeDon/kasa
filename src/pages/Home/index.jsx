@@ -4,7 +4,7 @@ import CoverPictureHome from '../../assets/img-home-contrasted.png'
 
 function Home(){
 
-    const title = "Bienvenue sur la page d'accueil";
+    const title = "Chez vous, partout et ailleurs";
   
   
     return(

@@ -1,14 +1,36 @@
-.banner-container{
-    height: 300px;
-    width: 95%;
-    background-repeat: no-repeat ;
-    background-size:cover;
+.banner-container {
+    width: 90%;
+    height: 111px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 12px;
+    background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     
-    &-title{
-        color:white;
+
+    &-title {
+
+        color: $textColor
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .banner-container {
+        height: 223px;
+        justify-content: center;
+        padding-left: 0px;
+
+        &-title {
+
+            font-size: 48px;
+            text-align: center;
+            
+        }
     }
 }
