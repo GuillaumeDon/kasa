@@ -8,7 +8,7 @@ function Rating({ rating }) {
   const stars = [];
   for (let i = 0; i < 5; i++) {
     if (i < numStars) {
-      stars.push(<span key={i}>&#9733;</span>); // Étoile pleine
+      stars.push(<span className='stars'key={i}>&#9733;</span>); // Étoile pleine
     } else {
       stars.push(<span key={i}>&#9734;</span>); // Étoile vide
     }

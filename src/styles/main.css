@@ -9,12 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  color: black;
-}
-
 #root {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -108,9 +104,40 @@ a {
   justify-content: center;
 }
 
+.stars {
+  color: #FF6060;
+}
+
+.collapse-container-header {
+  background-color: #FF6060;
+  color: white;
+}
+.collapse-container-header-title {
+  background-color: #FF6060;
+  color: white;
+}
+.collapse-container-content {
+  background-color: #F6F6F6;
+  color: black;
+  padding: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
 .host-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 10px;
+}
+.host-container-name {
+  color: #FF6060;
+}
+.host-container-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
 .container-list {
@@ -156,6 +183,15 @@ a {
     flex: calc(33% - 33px);
   }
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
 .product-container {
   display: flex;
   flex-direction: column;
@@ -169,6 +205,11 @@ a {
 }
 .product-container-location {
   font-size: 15px;
+}
+.product-container-infos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header-container {
@@ -215,21 +256,6 @@ a {
   align-items: center;
   margin: auto;
   width: 95%;
-}
-
-.collapse-container {
-  background-color: #FF6060;
-  color: white;
-  margin-bottom: 30px;
-}
-.collapse-container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.collapse-content {
-  background-color: white;
 }
 
 .error-container {

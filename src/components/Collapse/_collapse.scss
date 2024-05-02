@@ -1,0 +1,24 @@
+.collapse-container{
+
+        
+
+        &-header{
+            background-color: $primaryColor;
+            color: white;
+            &-title{
+                background-color: $primaryColor;
+                color: white;
+            }
+        }
+
+        &-content{
+            background-color: $backgroundCard ;
+            color: black;
+            padding: 10px;
+            
+    }
+}
+
+li{
+    list-style-type: none;
+}

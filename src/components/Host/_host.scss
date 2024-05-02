@@ -1,4 +1,14 @@
 .host-container{
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
+   gap: 10px;
+
+   &-name{
+      color: $primaryColor
+   }
+   &-img{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+   }
 }

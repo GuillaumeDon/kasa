@@ -15,5 +15,10 @@
         font-size: 15px;
     }
 
-
+    &-infos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
 }

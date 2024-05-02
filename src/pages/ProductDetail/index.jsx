@@ -28,8 +28,10 @@ function ProductDetail() {
       <h2 className='product-container-title'>{product.title}</h2>
       <h3 className='product-container-location'>{product.location}</h3>
       <Tags productId={id}/>
+      <div className='product-container-infos'>
       <Rating rating={product.rating} />
       <Host name={product.host.name} picture={product.host.picture} />
+      </div>
       <Collapse title="Description">
       <p>{product.description}</p>
       </Collapse>
