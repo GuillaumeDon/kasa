@@ -5,6 +5,7 @@ import jsonData from './../../data/data.json';
 import Collapse from '../../components/Collapse';
 import Tags from '../../components/Tags';
 import Rating from '../../components/Rating';
+import Host from '../../components/Host';
 
 function ProductDetail() {
   const { id } = useParams();
@@ -26,6 +27,7 @@ function ProductDetail() {
       <h3>Localisation: {product.location}</h3>
       <Tags productId={id}/>
       <Rating rating={product.rating} />
+      <Host name={product.host.name} picture={product.host.picture} />
       <Collapse title="Description">
       <p>{product.description}</p>
       </Collapse>
