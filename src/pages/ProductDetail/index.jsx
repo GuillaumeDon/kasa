@@ -4,6 +4,7 @@ import { useParams, Navigate } from 'react-router-dom';
 import jsonData from './../../data/data.json'; 
 import Collapse from '../../components/Collapse';
 import Tags from '../../components/Tags';
+import Rating from '../../components/Rating';
 
 function ProductDetail() {
   const { id } = useParams();
@@ -24,6 +25,7 @@ function ProductDetail() {
       <h2>{product.title}</h2>
       <h3>Localisation: {product.location}</h3>
       <Tags productId={id}/>
+      <Rating rating={product.rating} />
       <Collapse title="Description">
       <p>{product.description}</p>
       </Collapse>
