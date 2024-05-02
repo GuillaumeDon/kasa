@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/main.css';
-import jsonData from '../data/data.json';
+import jsonData from '../../data/data.json';
 
 function Tags({ productId }) {
     // Trouver l'élément correspondant à l'ID du produit

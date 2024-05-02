@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUpIcon, ArrowDownIcon } from '../components/Arrows'; 
+import { ArrowUpIcon, ArrowDownIcon } from '../../components/Arrows'; 
 
 
 

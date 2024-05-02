@@ -1,5 +1,5 @@
-import '../styles/main.css'
-import logoFooter from '../assets/logo-footer.png'
+// import '../../styles/main.css'
+import logoFooter from '../../assets/logo-footer.png'
 
 
 

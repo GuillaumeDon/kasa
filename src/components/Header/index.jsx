@@ -1,6 +1,6 @@
-import '../styles/main.css'
-import logoMobile from '../assets/logo-mobile.png'
-import Nav from './Nav'
+import '../../styles/main.css'
+import logoMobile from '../../assets/logo-mobile.png'
+import Nav from './../Nav'
 
 
 function Header() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import jsonData from '../data/data.json'
+import jsonData from '../../data/data.json'
 
 function Card () {
   return (

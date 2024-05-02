@@ -36,7 +36,7 @@
 
 
 import React, { useState } from 'react';
-import { ArrowLeftIcon, ArrowRightIcon } from '../components/Arrows';
+import { ArrowLeftIcon, ArrowRightIcon } from '../../components/Arrows';
 
 function Slideshow({ images }) {
   const [currentSlide, setCurrentSlide] = useState(0);

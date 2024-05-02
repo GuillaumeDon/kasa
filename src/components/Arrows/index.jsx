@@ -27,7 +27,7 @@
 
 
 import React from 'react';
-import logoArrow from '../assets/arrow.png';
+import logoArrow from '../../assets/arrow.png';
 
 const ArrowIcon = ({ alt, className, style }) => (
   <img src={logoArrow} alt={alt} className={`arrow-icon ${className}`} style={style} />
