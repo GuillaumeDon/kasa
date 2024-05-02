@@ -36,13 +36,14 @@
     }
 }
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: $tablet) {
 
     .home-container{
         &-presentation{
             height: 220px;
             align-items: center;
             justify-content: center;
+           
 
             &-title{
                 text-align: center;
