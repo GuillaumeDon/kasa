@@ -13,6 +13,8 @@ function ProductDetail() {
 
   // Recherchez le produit correspondant à l'ID dans le fichier JSON
   const product = jsonData.find(item => item.id === id);
+
+  //Voir useEffect
   //voir pour transformer en state
 
   if (!product) {
