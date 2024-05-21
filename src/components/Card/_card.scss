@@ -1,85 +1,144 @@
-.container-list{
-    // background-color: green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 50px;
-    width: 90%;
+// .container-list{
+//     // background-color: green;
+//     // display: flex;
+//     // flex-direction: column;
+//     // align-items: center;
+//     // justify-content: space-around;
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//     gap: 3rem; 
+
+//     margin-bottom: 50px;
+//     width: 90%;
     
  
 
-    &-item{
-        // background-color: $primaryColor;
-        list-style-type: none;
+//     &-item{
+//         // background-color: $primaryColor;
+//         list-style-type: none;
 
-        position: relative; 
+//         position: relative; 
        
    
-        color: rgb(255, 255, 255);
-        text-shadow: 1px 1px 2px black;
-        // width: 335px;
-        height: 220px;
+//         color: rgb(255, 255, 255);
+//         text-shadow: 1px 1px 2px black;
+//         // width: 335px;
+//         height: 220px;
        
-        margin-bottom: 50px;
-        width: 100%;
-        max-width: 600px;
-        height: 255px;
+//         margin-bottom: 50px;
+//         width: 100%;
+//         max-width: 600px;
+//         height: 255px;
 
      
     
 
-        &-title{
-           position: absolute;
-           top: 160px;
-           padding: 10px;
-           word-wrap: break-word;
+//         &-title{
+//            position: absolute;
+//            top: 160px;
+//            padding: 10px;
+//            word-wrap: break-word;
            
-        //    flex-wrap: wrap;
+//         //    flex-wrap: wrap;
           
-        }
+//         }
 
-        &-img{
-            height: 100%;
-            width: 100%;
+//         &-img{
+//             height: 100%;
+//             width: 100%;
             
            
             
             
-        }
-    }
-}
+//         }
+//     }
+// }
 
-@media screen and (min-width: $laptop) {
-    .container-list {
-       background-color: $backgroundCard;
-       flex-direction: row; 
-       flex-wrap: wrap;
-       padding-top: 40px;         
-    
-
-        &-item {
-      
-
-        max-height: 340px;
-        max-width: 280px;
-        flex: calc(33% - 33px);
-
-    }
-    }
-}
-
-// @media screen and (min-width: $laptopMax) {
+// @media screen and (min-width: $laptop) {
 //     .container-list {
-
+        
+//        background-color: $backgroundCard;
+//     //    flex-direction: row; 
+//     //    flex-wrap: wrap;
+//     grid-template-columns: repeat(3, 1fr);
+//        padding-top: 40px;         
+    
 
 //         &-item {
       
 
 //         max-height: 340px;
-//         max-width: 340px;
+//         max-width: 280px;
 //         flex: calc(33% - 33px);
 
 //     }
 //     }
 // }
+
+// .container-list {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//     gap: 1rem; // ajustez cet écartement selon vos besoins
+  
+//     @media (min-width: 768px) { // Pour les écrans de taille moyenne et plus grands
+//       grid-template-columns: repeat(3, 1fr);
+//     }
+//   }
+
+
+
+
+.container-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem; // ajustez cet écartement selon vos besoins
+    justify-items: center; // Centrer les items dans la grille
+  
+    @media (min-width: 768px) { // Pour les écrans de taille moyenne et plus grands
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    &-item {
+      list-style-type: none;
+      position: relative;
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 2px black;
+      width: 100%;
+      max-width: 300px; // Ajustez selon votre besoin
+      height: 255px;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      &-title {
+        position: absolute;
+        top: 160px;
+        padding: 10px;
+        word-wrap: break-word;
+      }
+  
+      &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // Pour que l'image soit bien ajustée dans son conteneur
+      }
+    }
+  }
+  
+  @media screen and (min-width: $laptop) {
+    .container-list {
+      background-color: $backgroundCard;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 40px;
+      width: 90%;
+  
+      &-item {
+        max-height: 340px;
+        max-width: 280px;
+        flex: calc(33% - 33px);
+      }
+    }
+  }
+  
