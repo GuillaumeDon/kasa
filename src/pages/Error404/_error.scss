@@ -5,9 +5,23 @@
    justify-content: center;
    color: $primaryColor;
    margin-bottom: 50px;
+  
 
    &-title{
     font-weight: bold;
     font-size: 96px;
+   }
+
+   &-txt{
+      margin: auto;
+      text-align: center;
+   }
+}
+.mobile-only {
+   display: none; // Cache la saut de ligne par défaut
+}
+@media screen and (max-width: #{$tablet}) {
+   .mobile-only {
+       display: inline; // Affiche le saut de ligne pour les écrans plus petits
    }
 }

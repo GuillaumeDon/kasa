@@ -1,28 +1,13 @@
-.about-container{
-
+.about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   margin: auto;
-   width: 95%;
-  
+  margin: auto;
+  width: 95%;
 }
-// .collapse-container{
-//     background-color: $primaryColor;
-//     color: white;
-//     margin-bottom: 30px;
 
-//     &-header {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-       
-//       }
-
-// }
-
-
-// .collapse-content{
-//   background-color: white;
-// }
+.collapse-container {
+  width: 98%;
+  margin-bottom: 20px;
+}

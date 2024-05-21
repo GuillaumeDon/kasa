@@ -289,6 +289,11 @@ a {
   width: 95%;
 }
 
+.collapse-container {
+  width: 98%;
+  margin-bottom: 20px;
+}
+
 .error-container {
   display: flex;
   flex-direction: column;
@@ -300,4 +305,18 @@ a {
 .error-container-title {
   font-weight: bold;
   font-size: 96px;
+}
+.error-container-txt {
+  margin: auto;
+  text-align: center;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-only {
+    display: inline;
+  }
 }/*# sourceMappingURL=main.css.map */
