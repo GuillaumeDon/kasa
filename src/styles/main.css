@@ -263,6 +263,15 @@ a {
   margin: auto;
 }
 
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-only {
+    display: inline;
+  }
+}
 .home-container {
   display: flex;
   flex-direction: column;
