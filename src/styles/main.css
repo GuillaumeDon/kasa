@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
@@ -115,11 +116,13 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #FF6060;
+  border-radius: 10px;
   color: white;
 }
 .collapse-container-header-title {
   background-color: #FF6060;
   color: white;
+  margin-left: 0px 20px;
 }
 .collapse-container-content {
   background-color: #F6F6F6;
@@ -236,19 +239,32 @@ a {
   flex-direction: column;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .product-container-collapse {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .product-container-collapse .collapse-container {
   width: 100%;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .product-container-collapse .collapse-container {
-    width: 90%;
+    width: 48%; /* Ajuster la largeur pour qu'elles soient côte à côte avec un peu d'espace */
+    margin-bottom: 0;
   }
 }
 
 .collapse-container {
   width: 100%;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .collapse-container {
+    width: 48%;
+    margin-bottom: 0;
+  }
 }
 
 .header-container {

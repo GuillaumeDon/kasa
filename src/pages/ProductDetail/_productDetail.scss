@@ -31,12 +31,18 @@
         flex-direction: column;
         width: 100%;
 
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
         .collapse-container {
             width: 100%;
             margin-bottom: 10px;
 
             @media screen and (min-width: $tablet) {
-                width: 90%;
+                width: 48%; /* Ajuster la largeur pour qu'elles soient côte à côte avec un peu d'espace */
+                margin-bottom: 0;
             }
         }
     }
@@ -45,4 +51,9 @@
 .collapse-container {
     width: 100%;
     margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+        width: 48%;
+        margin-bottom: 0;
+    }
 }
