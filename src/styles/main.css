@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
@@ -113,6 +112,7 @@ body {
   border-radius: 10px;
   font-size: 13px;
   width: 400px;
+  max-width: 200px;
   height: 20px;
   padding: 2px;
   display: flex;
@@ -220,6 +220,7 @@ li {
 a {
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .active {
@@ -269,7 +270,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .product-container-collapse .collapse-container {
-    width: 48%; /* Ajuster la largeur pour qu'elles soient côte à côte avec un peu d'espace */
+    width: 88%;
     margin-bottom: 0;
   }
 }
