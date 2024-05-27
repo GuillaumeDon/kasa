@@ -4,7 +4,12 @@
    align-items: center;
    justify-content: center;
    color: $primaryColor;
-   margin-bottom: 50px;
+   margin: 50px 0px 130px 0px;
+   min-height: 650px;
+   width: 100%;
+   
+
+
   
 
    &-title{
@@ -15,13 +20,27 @@
    &-txt{
       margin: auto;
       text-align: center;
+      font-weight: bold;
+     
    }
+
+   &-link{
+      text-decoration: underline;
+      font-weight: bold;
+   }
+
 }
-.mobile-only {
-   display: none; // Cache la saut de ligne par défaut
-}
-@media screen and (max-width: #{$tablet}) {
-   .mobile-only {
-       display: inline; // Affiche le saut de ligne pour les écrans plus petits
+
+@media screen and (min-width: $tablet) {
+
+   .error-container{
+   &-title{
+      font-size: 196px;
+     }
+
+     &-txt{
+      font-size: 35px;
+      margin-bottom: 200px;
+     }
    }
 }
