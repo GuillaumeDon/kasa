@@ -168,7 +168,7 @@ li {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
   justify-items: center;
-  width: 95%;
+  width: 90%;
 }
 @media screen and (min-width: 768px) {
   .container-list {
@@ -213,7 +213,7 @@ li {
   }
   .container-list-item {
     max-height: 340px;
-    max-width: 280px;
+    max-width: 380px;
     flex: calc(33% - 33px);
   }
 }
