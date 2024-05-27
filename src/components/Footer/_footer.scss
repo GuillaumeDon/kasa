@@ -9,12 +9,3 @@
     color: white;
     margin: auto;
 }
-.mobile-only {
-    display: none;
-}
-
-@media screen and (max-width: #{$tablet}) {
-    .mobile-only {
-        display: inline; 
-    }
-}

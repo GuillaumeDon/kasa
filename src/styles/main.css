@@ -15,6 +15,15 @@ body {
   margin: auto;
 }
 
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-only {
+    display: inline;
+  }
+}
 .arrow-left,
 .arrow-right {
   display: flex;
@@ -296,21 +305,20 @@ a {
   margin: auto;
 }
 
-.mobile-only {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .mobile-only {
-    display: inline;
-  }
-}
 .home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+.container-list {
+  background-color: red;
+  width: 90%;
+}
+.container-list-item {
+  width: 100%;
 }
 
 .about-container {

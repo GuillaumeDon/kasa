@@ -9,4 +9,11 @@
    
 
 }
+.container-list{
+    background-color: red;
+    width: 90%;
 
+    &-item{
+        width: 100%;
+    }
+}
