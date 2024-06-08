@@ -1,29 +1,73 @@
-.collapse-container{
+// .collapse-container{
 
-       margin-bottom: 20px;
+//        margin-bottom: 20px;
 
-        &-header{
-            display: flex;
-            justify-content: space-between;
-            background-color: $primaryColor;
-            border-radius: 10px;
-            color: white;
-            &-title{
-                background-color: $primaryColor;
-                color: white;
-                margin-left: 0px 20px;
-            }
-        }
+//         &-header{
+//             display: flex;
+//             justify-content: space-between;
+//             background-color: $primaryColor;
+//             border-radius: 10px;
+//             color: white;
+//             &-title{
+//                 background-color: $primaryColor;
+//                 color: white;
+//                 margin-left: 0px 20px;
+//             }
+//         }
 
-        &-content{
-            background-color: $backgroundCard ;
-            color: black;
-            padding: 10px;
+//         &-content{
+//             background-color: $backgroundCard ;
+//             color: black;
+//             padding: 10px;
            
             
-    }
-}
+//     }
+// }
 
-li{
+// li{
+//     list-style-type: none;
+// }
+
+
+.collapse-container {
+    margin-bottom: 20px;
+  
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      background-color: $primaryColor;
+      border-radius: 10px;
+      color: white;
+  
+      &-title {
+        background-color: $primaryColor;
+        color: white;
+        margin-left: 0px 20px;
+      }
+    }
+  
+    &-content {
+      background-color: $backgroundCard;
+      color: black;
+      padding: 10px;
+    }
+  }
+  
+  li {
     list-style-type: none;
-}
+  }
+  
+  .collapse-arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  
+    &.open {
+      transform: rotate(180deg); /* Rotate 180 degrees to point down */
+    }
+  
+    &.closed {
+      transform: rotate(0deg); /* Default state, pointing up */
+    }
+  }
+  
