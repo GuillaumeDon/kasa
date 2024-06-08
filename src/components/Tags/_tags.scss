@@ -1,9 +1,13 @@
-
+ul{
+    padding: 0px;
+    margin: 10px 0px;
+}
 
 .tags{
     display: flex;
     list-style-type: none;
     gap: 20px;
+   
   
    
  
@@ -13,13 +17,25 @@
         color: $textColor;
         border-radius: 10px;
         font-size: 13px;
-        width: 400px;
-        max-width: 200px;
-        height: 20px;
-        padding: 2px;
+        // width: 400px;
+        // max-width: 200px;
+        // height: 20px;
+        padding: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
        
     }
 }
+
+
+// @media screen and (min-width: $tablet) {
+//     .tags{
+        
+//         &-item{
+//             width: 150px;
+//             height: 20px;
+
+//         }
+//     }
+// }

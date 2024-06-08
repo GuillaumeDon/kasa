@@ -15,6 +15,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
 #root {
   max-width: 1400px;
   margin: auto;
@@ -55,6 +60,12 @@ body {
     width: 100px;
     height: 100px;
   }
+  .arrow-left {
+    right: 9%;
+  }
+  .arrow-right {
+    left: 9%;
+  }
 }
 .slideshow-container {
   display: flex;
@@ -71,6 +82,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .slideshow-container {
+    padding: 0px 100px;
     height: 500px;
   }
   .slideshow-container-number {
@@ -112,6 +124,11 @@ body {
     text-align: center;
   }
 }
+ul {
+  padding: 0px;
+  margin: 10px 0px;
+}
+
 .tags {
   display: flex;
   list-style-type: none;
@@ -122,10 +139,7 @@ body {
   color: white;
   border-radius: 10px;
   font-size: 13px;
-  width: 400px;
-  max-width: 200px;
-  height: 20px;
-  padding: 2px;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,6 +147,10 @@ body {
 
 .stars {
   color: #FF6060;
+}
+
+.stars, .stars-empty {
+  font-size: 30px;
 }
 
 .collapse-container {
@@ -188,6 +206,8 @@ li {
 }
 .host-container-name {
   color: #FF6060;
+  display: flex;
+  align-items: center;
 }
 .host-container-img {
   width: 70px;
@@ -280,6 +300,7 @@ a {
 .product-container-title {
   color: #FF6060;
   font-size: 20px;
+  font-weight: 600;
 }
 .product-container-location {
   font-size: 15px;
@@ -329,6 +350,20 @@ a {
   }
 }
 
+.product-container-collapse .collapse-container {
+  width: 115%;
+  margin-bottom: 10px;
+  position: relative;
+  right: 8%;
+}
+
+@media screen and (min-width: 768px) {
+  .product-container-collapse .collapse-container {
+    width: 100%;
+    margin-bottom: 10px;
+    position: initial;
+  }
+}
 .header-container {
   width: 95%;
   display: flex;
@@ -351,7 +386,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 209px;
+  height: 309px;
   width: 100vw;
   background-color: black;
   color: white;
@@ -361,6 +396,11 @@ a {
   transform: translateX(-50%);
 }
 
+@media screen and (min-width: 1000px) {
+  .footer-container {
+    height: 200px;
+  }
+}
 .home-container {
   display: flex;
   flex-direction: column;

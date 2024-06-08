@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 209px;
+    height: 309px;
     width: 100vw;
     background-color: black;
     color: white;
@@ -11,4 +11,11 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+
+}
+@media screen and (min-width: $laptop) {
+
+    .footer-container{
+        height: 200px;
+    }
 }
