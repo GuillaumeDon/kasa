@@ -28,7 +28,6 @@
 //     list-style-type: none;
 // }
 
-
 .collapse-container {
     margin-bottom: 20px;
   
@@ -47,9 +46,20 @@
     }
   
     &-content {
-      background-color: $backgroundCard;
-      color: black;
-      padding: 10px;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+  
+      &.open {
+        opacity: 1;
+        max-height: 1000px; /* Set a large value to ensure content is fully shown */
+      }
+  
+      &.closed {
+        opacity: 0;
+        max-height: 0;
+      }
     }
   }
   

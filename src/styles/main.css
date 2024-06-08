@@ -150,9 +150,18 @@ body {
   margin-left: 0px 20px;
 }
 .collapse-container-content {
-  background-color: #F6F6F6;
-  color: black;
-  padding: 10px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+.collapse-container-content.open {
+  opacity: 1;
+  max-height: 1000px; /* Set a large value to ensure content is fully shown */
+}
+.collapse-container-content.closed {
+  opacity: 0;
+  max-height: 0;
 }
 
 li {
