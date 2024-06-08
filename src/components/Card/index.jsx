@@ -6,6 +6,7 @@ import jsonData from '../../data/data.json'
 function Card () {
   return (
    
+      // Card : id, title , cover comme props
       
       <section className='container-list'>
         {jsonData.map(item => (
@@ -20,3 +21,5 @@ function Card () {
 };
 
 export default Card;
+
+//créer un composant 

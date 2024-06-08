@@ -1,6 +1,6 @@
 .slideshow-container{
  display: flex;
- width: 90%;
+ width: 100%;
  height: 240px;
  position: relative;
 
@@ -22,6 +22,7 @@
 @media screen and (min-width: $tablet) {
 
     .slideshow-container{
+        height: 500px;
         &-number{
             display:block;
             position: absolute;
@@ -29,6 +30,7 @@
             right: 50%;
             color: white;
             font-weight: bold;
+            
          }
     }
 }

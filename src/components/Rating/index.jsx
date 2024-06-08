@@ -2,7 +2,7 @@ import React from 'react';
 
 function Rating({ rating }) {
   // Convertir le rating en un nombre entier
-  const numStars = parseInt(rating);
+  const numStars = parseInt(rating); //mettre ca comme state
 
   // Créer un tableau avec le nombre d'étoiles correspondant au rating
   const stars = [];

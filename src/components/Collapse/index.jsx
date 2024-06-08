@@ -3,13 +3,14 @@ import { ArrowUpIcon, ArrowDownIcon } from '../../components/Arrows';
 
 
 
-const Collapse = ({ title, children }) => {
+const Collapse = ({ title, children , isList : boolean }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
   };
 
+  //si islist = true ? generere les <ul><li> :  generer une <p>
   return (
     <div className="collapse-container">
       <div className="collapse-container-header" onClick={toggleCollapse}>

@@ -11,7 +11,7 @@ function ProductDetail() {
   const { id } = useParams();
 
   // Recherchez le produit correspondant à l'ID dans le fichier JSON
-  const product = jsonData.find(item => item.id === id);
+  const product = jsonData.find(item => item.id === id); //Essaye de mettre product comme un state du composant
 
   //Voir useEffect
   //voir pour transformer en state

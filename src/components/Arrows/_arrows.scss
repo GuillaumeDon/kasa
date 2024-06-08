@@ -3,6 +3,8 @@
     display: flex;
     position: absolute;
     top:40%;
+   
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -14,6 +16,19 @@
     left:1%;
    
 }
-.arrow-left::hover{
+.arrow-left:hover,
+.arrow-right:hover
+{
     cursor: pointer;
+}
+
+@media screen and (min-width: $tablet) {
+
+
+    .arrow-left,
+.arrow-right{
+width: 100px;
+height: 100px;
+
+}
 }
