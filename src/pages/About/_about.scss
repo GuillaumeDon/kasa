@@ -4,17 +4,19 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 95%;
-
- 
+  // width: 100%;
 
   
 }
 
 .collapse-container {
-  width: 95%;
+  width: 100%;
   margin-bottom: 20px;
+  
   &-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
     padding: 10px;
   }
 
@@ -25,9 +27,17 @@
 
 
   .collapse-container {
-    width: 80%;
-    justify-content: center;
+    width: 90%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     margin-bottom: 20px;
+    &-header{
+      width: 100%;
+
+    }
+
+
 
   
 }}
