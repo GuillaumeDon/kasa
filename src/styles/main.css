@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -393,7 +398,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .error-container-title {
-    font-size: 196px;
+    font-size: 296px;
   }
   .error-container-txt {
     font-size: 35px;
