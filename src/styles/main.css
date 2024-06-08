@@ -363,8 +363,15 @@ a {
 .collapse-container-header {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  position: relative;
+  left: 5%;
   padding: 10px;
+}
+.collapse-container-content {
+  width: 90%;
+  position: relative;
+  left: 5%;
 }
 
 @media screen and (min-width: 768px) {
@@ -374,6 +381,13 @@ a {
   }
   .collapse-container-header {
     width: 100%;
+    position: relative;
+    left: 5%;
+  }
+  .collapse-container-content {
+    width: 100%;
+    position: relative;
+    left: 5%;
   }
 }
 .error-container {

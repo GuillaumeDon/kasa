@@ -16,9 +16,19 @@
   &-header{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    position: relative;
+    left: 5%;
     padding: 10px;
+
   }
+  &-content{
+    width: 90%;
+    position: relative;
+    left: 5%;
+   
+  }
+
 
 }
 
@@ -34,10 +44,17 @@
     margin-bottom: 20px;
     &-header{
       width: 100%;
+      position: relative;
+      left: 5%;
 
     }
 
-
+    &-content{
+      width: 100%;
+      position: relative;
+      left: 5%;
+     
+    }
 
   
 }}
