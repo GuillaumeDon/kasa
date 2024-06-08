@@ -224,6 +224,7 @@ li {
   color: #FF6060;
   display: flex;
   align-items: center;
+  white-space: pre-line;
 }
 .host-container-img {
   width: 70px;
