@@ -33,12 +33,12 @@ function ProductDetail() {
         <Host name={product.host.name} picture={product.host.picture} />
       </div>
       <div className='product-container-collapse'>
-        <div className='collapse-container'>
+        
           <Collapse title="Description">
             <p>{product.description}</p>
           </Collapse>
-        </div>
-        <div className='collapse-container'>
+        
+        
           <Collapse title="Equipements">
             <ul>
               {product.equipments.map((equipment, index) => (
@@ -46,7 +46,7 @@ function ProductDetail() {
               ))}
             </ul>
           </Collapse>
-        </div>
+        
       </div>
     </div>
   );
