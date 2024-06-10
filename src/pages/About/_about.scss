@@ -85,3 +85,8 @@
   justify-content: center;
   // right: 4% !important;
 }
+
+@media screen and (min-width: $tablet) {
+  .collapse-about{
+    width: 80% !important;}
+}
