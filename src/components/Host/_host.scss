@@ -16,3 +16,12 @@
       border-radius: 50%;
    }
 }
+
+
+@media screen and (min-width: $tablet) {
+   .host-container{
+
+      position: relative;
+      bottom: 20px;
+   }
+}

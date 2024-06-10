@@ -18,8 +18,8 @@
     display: flex;
     align-items: center;
     width: 90%;
-    position: relative;
-    left: 5%;
+    // position: relative;
+    // left: 5%;
     padding: 1px 10px;
 
   }
@@ -52,9 +52,9 @@
     }
 
     &-content{
-      width: 100%;
+      width: 95%;
       position: relative;
-      left: 5%;
+      left: 2%;
      
     }
 
@@ -64,16 +64,24 @@
 
 
 
-.collapse-container-header{
-  width: 90% !important;
-  position: relative !important;
-  left: 5% !important;
-  // margin-bottom: 20px;
-}
+// .collapse-container-header{
+//   width: 90% !important;
+//   position: relative !important;
+//   left: 5% !important;
+//   // margin-bottom: 20px;
+// }
 
 
-.collapse-container-content{
+// .collapse-container-content{
+//   width: 90% !important;
+//   position: relative !important;
+//   left: 5% !important;
+// }
+
+.collapse-about{
   width: 90% !important;
   position: relative !important;
-  left: 5% !important;
+  align-items: center;
+  justify-content: center;
+  // right: 4% !important;
 }

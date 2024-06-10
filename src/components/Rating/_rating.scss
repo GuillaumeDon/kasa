@@ -7,3 +7,12 @@
 .stars, .stars-empty{
 font-size: 30px;
 }
+
+
+@media screen and (min-width: $tablet) {
+    .stars, .stars-empty{
+ 
+       position: relative;
+       bottom: 20px;
+    }
+ }

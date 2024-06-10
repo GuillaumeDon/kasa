@@ -34,12 +34,12 @@ function ProductDetail() {
       </div>
       <div className='product-container-collapse'>
         
-          <Collapse title="Description">
+          <Collapse title="Description" className="custom-collapse-produce">
             <p>{product.description}</p>
           </Collapse>
         
         
-          <Collapse title="Equipements">
+          <Collapse title="Equipements"  className="custom-collapse-produce">
             <ul>
               {product.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>

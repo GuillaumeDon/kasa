@@ -28,7 +28,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ArrowUpIcon } from '../../components/Arrows';
 
-const Collapse = ({ title, children, isList }) => {
+const Collapse = ({ title, children, isList, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);
 
@@ -45,7 +45,7 @@ const Collapse = ({ title, children, isList }) => {
   }, [isOpen]);
 
   return (
-    <div className="collapse-container">
+    <div className={`collapse-container ${className}`}>
       <div className="collapse-container-header" onClick={toggleCollapse}>
         <h3 className="collapse-container-header-title">{title}</h3>
         <div className={`collapse-arrow ${isOpen ? 'open' : 'closed'}`}>
