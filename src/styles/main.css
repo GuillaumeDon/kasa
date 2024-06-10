@@ -367,12 +367,6 @@ a {
   }
 }
 
-.collapse-container-header {
-  width: 100% !important;
-  position: relative !important;
-  left: -1% !important;
-}
-
 @media screen and (min-width: 768px) {
   .product-container-collapse {
     gap: 30px;
@@ -467,6 +461,18 @@ a {
     left: 5%;
   }
 }
+.collapse-container-header {
+  width: 90% !important;
+  position: relative !important;
+  left: 5% !important;
+}
+
+.collapse-container-content {
+  width: 90% !important;
+  position: relative !important;
+  left: 5% !important;
+}
+
 .error-container {
   display: flex;
   flex-direction: column;
