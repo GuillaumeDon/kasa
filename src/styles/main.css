@@ -195,6 +195,7 @@ ul {
   max-height: 0;
   transition: max-height 0.3s ease, opacity 0.3s ease;
   opacity: 0;
+  background-color: #F6F6F6;
 }
 .collapse-container-content.open {
   opacity: 1;
@@ -251,6 +252,7 @@ li {
   gap: 1rem;
   justify-items: center;
   width: 90%;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
   .container-list {
@@ -273,7 +275,7 @@ li {
 }
 .container-list-item-title {
   position: absolute;
-  top: 160px;
+  top: 180px;
   padding: 10px;
   word-wrap: break-word;
 }
@@ -338,7 +340,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin: 10px 0 20px 0px;
 }
 @media screen and (min-width: 768px) {
   .product-container-infos {
@@ -424,7 +426,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 309px;
+  height: 200px;
   width: 100vw;
   background-color: black;
   color: white;

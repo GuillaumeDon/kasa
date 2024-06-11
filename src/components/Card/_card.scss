@@ -7,6 +7,7 @@
     justify-items: center; // Centrer les items dans la grille
     // background-color: red;
     width: 90%;
+    border-radius: 10px;
   
   
     @media screen and (min-width: $tablet) {// Pour les écrans de taille moyenne et plus grands
@@ -31,7 +32,7 @@
   
       &-title {
         position: absolute;
-        top: 160px;
+        top: 180px;
         padding: 10px;
         word-wrap: break-word;
       }

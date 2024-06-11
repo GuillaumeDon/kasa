@@ -18,7 +18,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 10px 0;
+        margin: 10px 0 20px 0px;
 
         @media screen and (min-width: $tablet) {
             flex-direction: column-reverse;
