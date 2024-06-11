@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import jsonData from '../../data/data.json'
 
-function Card () {
+function List () {
   return (
    
       // Card : id, title , cover comme props
@@ -20,6 +20,6 @@ function Card () {
   );
 };
 
-export default Card;
+export default List;
 
 //créer un composant 

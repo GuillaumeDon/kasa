@@ -1,5 +1,5 @@
 import Banner from '../../components/Banner'
-import Card from '../../components/Card'
+import List from '../../components/List'
 import CoverPictureHome from '../../assets/img-home-contrasted.png'
 
 function Home(){
@@ -13,7 +13,7 @@ function Home(){
     return(
         <div className="home-container">
         <Banner title={title} imageUrl={CoverPictureHome}  />
-        <Card/>
+        <List/>
         </div>
     )
 }
