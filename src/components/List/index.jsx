@@ -6,8 +6,6 @@ import jsonData from '../../data/data.json'
 function List () {
   return (
    
-      // Card : id, title , cover comme props
-      
       <section className='container-list'>
         {jsonData.map(item => (
         <Link to={`/product/${item.id}`} key={item.id} className='container-list-item'>
@@ -21,5 +19,3 @@ function List () {
 };
 
 export default List;
-
-//créer un composant 
