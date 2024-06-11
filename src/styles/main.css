@@ -91,6 +91,7 @@ body, html {
 }
 .slideshow-container-img {
   width: 100%;
+  border-radius: 10px;
 }
 .slideshow-container-number {
   display: none;
@@ -132,6 +133,7 @@ body, html {
 @media screen and (min-width: 768px) {
   .banner-container {
     height: 223px;
+    width: 94%;
     justify-content: center;
     padding-left: 0px;
   }
@@ -173,6 +175,7 @@ ul {
   .stars, .stars-empty {
     position: relative;
     bottom: 20px;
+    right: 20%;
   }
 }
 .collapse-container {
@@ -244,6 +247,7 @@ li {
   .host-container {
     position: relative;
     bottom: 20px;
+    right: 1.1%;
   }
 }
 .container-list {
