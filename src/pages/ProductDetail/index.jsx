@@ -10,11 +10,10 @@ import Slideshow from '../../components/Slideshow';
 function ProductDetail() {
   const { id } = useParams();
 
-  // Recherchez le produit correspondant à l'ID dans le fichier JSON
-  const product = jsonData.find(item => item.id === id); //Essaye de mettre product comme un state du composant
+ 
+  const product = jsonData.find(item => item.id === id);
 
-  //Voir useEffect
-  //voir pour transformer en state
+
 
   if (!product) {
     return <Navigate to="/404" />;
