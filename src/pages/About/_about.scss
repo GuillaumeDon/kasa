@@ -41,7 +41,9 @@
   .collapse-container {
     width: 90%;
     margin-bottom: 20px;
+   
     &-header{
+      border-radius: 5px;
       width: 100%;
       position: relative;
       left: 5%;

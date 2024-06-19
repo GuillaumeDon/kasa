@@ -10,7 +10,7 @@ function Rating({ rating }) {
     if (i < numStars) {
       stars.push(<span className='stars'key={i}>&#9733;</span>); // Étoile pleine
     } else {
-      stars.push(<span className='stars-empty' key={i}>&#9734;</span>); // Étoile vide
+      stars.push(<span className='stars-empty' key={i}>&#9733;</span>); // Étoile vide
     }
   }
 
