@@ -191,6 +191,7 @@ ul {
   background-color: #FF6060;
   border-radius: 10px;
   color: white;
+  margin-bottom: 15px;
 }
 .collapse-container-header-title {
   background-color: #FF6060;
@@ -485,7 +486,6 @@ a {
 .collapse-container-header {
   display: flex;
   align-items: center;
-  width: 90%;
   padding: 1px 10px;
 }
 .collapse-container-content {
@@ -533,6 +533,7 @@ a {
   margin: 50px 0px 130px 0px;
   min-height: 650px;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 .error-container-title {
   font-weight: bold;
@@ -549,8 +550,12 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .error-container {
+    justify-content: space-between;
+  }
   .error-container-title {
     font-size: 296px;
+    margin-top: 10px;
   }
   .error-container-txt {
     font-size: 35px;
