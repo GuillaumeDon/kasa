@@ -21,10 +21,11 @@
     // position: relative;
     // left: 5%;
     padding: 1px 10px;
+    margin-bottom: auto;
 
   }
   &-content{
-    width: 90%;
+    width: 100%;
     position: relative;
     padding: 0px 15px;
     left: 5%;
@@ -51,9 +52,10 @@
     }
 
     &-content{
-      width: 95%;
+      width: 100%;
       position: relative;
-      left: 2%;
+      left: 0.01%;
+      border-radius: 5px;
      
     }
 }}

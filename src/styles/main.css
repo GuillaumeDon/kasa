@@ -487,9 +487,10 @@ a {
   display: flex;
   align-items: center;
   padding: 1px 10px;
+  margin-bottom: auto;
 }
 .collapse-container-content {
-  width: 90%;
+  width: 100%;
   position: relative;
   padding: 0px 15px;
   left: 5%;
@@ -507,9 +508,10 @@ a {
     left: 5%;
   }
   .collapse-container-content {
-    width: 95%;
+    width: 100%;
     position: relative;
-    left: 2%;
+    left: 0.01%;
+    border-radius: 5px;
   }
 }
 .collapse-about {
